@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import CoinTableRow from './components/CoinTableRow';
+import './index.css';
 
 const App = () => {
   const [coins, setCoins] = useState([]);
@@ -21,6 +22,7 @@ const App = () => {
             <th>Symbol</th>
             <th>Price (USD)</th>
             <th>Total Volume (USD)</th>
+            <th>Percentage</th>
           </tr>
         </thead>
         <tbody>
